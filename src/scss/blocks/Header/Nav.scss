@@ -1,0 +1,39 @@
+.nav {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+
+  padding: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: $navHeight;
+
+  border-bottom: 1px solid $separateColor;
+  background-color: #F1DCC9;
+
+  &__inner {
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  padding-left: 10px;
+
+  display: inline-block;
+
+  &__text {
+    @extend %amita-700;
+    font-size: 48px;
+    line-height: 1;
+
+    text-transform: uppercase;
+    color: #9F4636;
+  }
+}
