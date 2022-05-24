@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className="wrapper">
       <Header handleOpenBurgerMenu={handleOpenBurgerMenu}/>
-      {/*<About/>*/}
+      <About/>
       <Skills/>
       <Menu
         isMenuActive={isMenuActive}

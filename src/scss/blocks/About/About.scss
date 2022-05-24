@@ -166,15 +166,6 @@
       left: 30px;
     }
 
-    &__inner {
-      max-width: 900px;
-    }
-
-    &__image {
-      width: 300px;
-      height: 300px;
-    }
-
     &__list {
       margin-bottom: 0;
 
@@ -187,11 +178,25 @@
   }
 }
 
+@media (max-width: 1160px) {
+  .about {
+    &__title {
+      max-width: 500px;
+
+      &::after {
+        width: 75%;
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .about {
     height: auto;
 
     &__title {
+      margin: 0 auto 30px;
+
       &::after {
         left: 50%;
         transform: translateX(-50%);
