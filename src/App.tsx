@@ -31,13 +31,17 @@ const App = () => {
       <Header handleOpenBurgerMenu={handleOpenBurgerMenu}/>
       <About/>
       <Skills/>
+      <Works
+        handleOpenWorkModal={setIsWorkModal}
+        handleSetWorkCardInfo={handleSetWorkCardInfo}
+      />
       <Menu
         isMenuActive={isMenuActive}
         handleCloseBurgerMenu={handleCloseBurgerMenu}
       />
-      {/*<Modal active={isWorkModal} setActive={setIsWorkModal}>*/}
-      {/*  <WorkModalBody active={isWorkModal} workCardData={workCardData}/>*/}
-      {/*</Modal>*/}
+      <Modal active={isWorkModal} setActive={setIsWorkModal}>
+        <WorkModalBody active={isWorkModal} workCardData={workCardData}/>
+      </Modal>
     </div>
   );
 };

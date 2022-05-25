@@ -136,11 +136,19 @@
       margin-bottom: 0;
     }
   }
-
+  @media all and (max-width: 768px) {
+    &__video {
+      height: 350px;
+    }
+  }
   @media all and (max-width: 555px) {
+    &__video {
+      height: 200px;
+    }
+
     &__title {
       font-family: Berkshire Swash, cursive;
-      font-size: 40px;
+      font-size: 36px;
     }
 
     &__image {
@@ -173,7 +181,6 @@
 
   @media all and (max-width: 425px) {
     padding-top: 0px;
-    padding-bottom: 0px;
 
     &__info-text {
       text-align: center;

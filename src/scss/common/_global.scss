@@ -85,7 +85,19 @@ body {
   &__header {
     .menu__close-button {
       left: auto;
-      right: 15px;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .modal {
+    &__header {
+      .menu__close-button {
+        right: -15px;
+        top: -15px;
+      }
     }
   }
 }

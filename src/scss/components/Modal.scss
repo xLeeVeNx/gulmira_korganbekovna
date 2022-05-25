@@ -38,7 +38,6 @@
     background-color: $mainColor;
 
     opacity: 0;
-    overflow-y: auto;
     transform: translate(0px, -100%);
     transition: all 0.5s ease 0s;
   }
@@ -106,6 +105,8 @@
   @media (max-width: 425px) {
     &__inner {
       padding: 0;
+      margin-right: 15px;
+      margin-left: 15px;
     }
 
     &__close {

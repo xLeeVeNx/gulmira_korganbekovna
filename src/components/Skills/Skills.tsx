@@ -2,6 +2,7 @@ import React from 'react';
 
 // Components
 import { Decor } from '../Decor/Decor';
+
 // Components
 
 interface ISkills {
@@ -15,7 +16,7 @@ const Skills: React.FC<ISkills> = ({}) => {
         <iframe className="skills__video" src="https://www.youtube.com/embed/ndNCbpuyF-w" title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen />
+                allowFullScreen/>
         <Decor fill="#F1DCC9"/>
       </div>
     </section>
